@@ -1,0 +1,22 @@
+﻿<Window x:Class="BankSystem_VP.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BankSystem_VP"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="473" Width="362">
+    <Grid>
+        <Label Content="Логин" HorizontalAlignment="Center" Margin="0,106,0,0" VerticalAlignment="Top" Height="37" Width="264" FontSize="20" Foreground="Black"/>
+        <Label Content="Пароль" HorizontalAlignment="Center" Margin="0,184,0,0" VerticalAlignment="Top" Width="264" FontSize="20"/>
+        <TextBox Name="LoginTextBox" HorizontalAlignment="Center" Margin="0,148,0,0" TextWrapping="Wrap" Text="Введите логин" VerticalAlignment="Top" Width="264" Height="25" FontSize="20" Foreground="#FF979292" BorderThickness="0,0,0,1" GotFocus="LoginTextBox_GotFocus" LostFocus="LoginTextBox_LostFocus"/>
+        <TextBox Name="PasswordTextBox" HorizontalAlignment="Center" Margin="0,223,0,0" TextWrapping="Wrap" Text="Введите пароль" VerticalAlignment="Top" Width="264" Height="25" FontSize="20" Foreground="#FF979292" BorderThickness="0,0,0,1" GotFocus="PasswordTextBox_GotFocus" LostFocus="PasswordTextBox_LostFocus"/>
+        <Label Content="Авторизация" HorizontalAlignment="Center" Margin="0,40,0,0" VerticalAlignment="Top" Width="178" FontSize="20"/>
+        <Button Content="Вход" HorizontalAlignment="Center" Margin="0,320,0,0" VerticalAlignment="Top" Width="264" Height="37" Click="EnterButton_Click" FontSize="20" Background="#FF0E6CEE" Foreground="White" BorderBrush="White">
+    <Button.Effect>
+        <DropShadowEffect Color="Black" Direction="270" Opacity="0.5" ShadowDepth="3" BlurRadius="5"/>
+    </Button.Effect>
+</Button>
+
+    </Grid>
+</Window>
