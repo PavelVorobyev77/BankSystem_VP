@@ -80,6 +80,9 @@ namespace BankSystem_VP
             {
                 // Действия при успешной авторизации
                 MessageBox.Show("Вы успешно авторизованы.");
+                Profit profit = new Profit();
+                profit.Show();
+
             }
             else
             {
